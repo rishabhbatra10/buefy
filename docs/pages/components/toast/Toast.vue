@@ -32,7 +32,9 @@
                 ExSimple,
                 ExSimpleCode,
                 outsideVueInstance: `
-                import { ToastProgrammatic as Toast } from 'buefy'
+                import Vue from 'vue'
+                import { Toast } from 'buefy'
+                Vue.use(Toast)
                 Toast.open('Toasty!')`
             }
         }
